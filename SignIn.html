@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In/Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <style media="screen">
+  .profileContainer{
+    float: right;
+    padding: 20px;
+    background: #426e66;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  }
+  .profileImage {
+    border-radius: 50%;
+    float: right;
+    height: 80px;
+    width:80px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);s
+}
+.pagecontent {
+  float: none;
+  background: #426e66;
+  text-align:center;
+  border-radius: 5px;
+  margin: auto;
+  width: 70%;
+  border: 3px solid aliceblue;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+  </style>
+</head>
+<body>
+
+  <!--Nav-->
+  <div class="topnav">
+    <a href="Home.html">Home</a>
+    <a href="SignIn.html">Sign In</a>
+    <a href="LanguageResources.html">Language Resources</a>
+    <a href="CareerResources.html">Career Resources</a>
+    <a href="CustomerService.html">Customer Service</a>
+  </div>
+  <!--Nav-->
+<div class="wholepage">
+
+  <!--Header content-->
+  <div class="profileContainer">
+    <table>
+      <th>Profile</th>
+      <tr>
+        <img src="avatar.png" alt="Profile Avatar" class="profileImage">
+      </tr>
+    </table>
+  </div>
+  <!--header content-->
+
+  <!--login form-->
+  <div class="login-page">
+    <div class="form">
+      <form class="register-form" name= "register" action="http://www.websitedevelopmentbook.com/FormEcho.php"
+       method="post">
+        <input type="text" placeholder="Full Name" required/>
+        <input type="number" placeholder="Phone Number" required/>
+        <input type="text" placeholder="Password" name= "password" required/>
+        <input type="text" placeholder="Email" required/>
+        <button>Create</button>
+        <p class="message">Already Registered? <a href="#">Login</a></p>
+      </form>
+
+      <form class="login-form" action="http://www.websitedevelopmentbook.com/FormEcho.php" method="post">
+        <input type="text" placeholder="Username" required/>
+        <input type="text" placeholder="Password" required/>
+        <button> Login</button>
+        <p class="message"> Not Registered?<a href="#">Register</a></p>
+      </form>
+    </div>
+  </div>
+  <!--login form-->
+<div class="pagecontent">
+  <h1>Sign Up!</h1>
+  <p>Sign up for your own profile , the best place with the best programming resources, offers
+     Career resources, and the opportunity learn alongside other developers.</p>
+</div><br><br><br><br>
+  <!--bottomdiv logo-->
+  <div id="bottomdiv">
+        <img src="logo.png" alt="Logo" height="43" width= "43">
+      </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$('.message a').click(function(){
+$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+</script>
+<script src="myscripts.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Service</title>
+  <link rel="stylesheet" href="style.css">
+  <style media="screen">
+  table{
+    background-color: #426e66;
+    border-radius: 5px;
+    padding:6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  }
+  input, textarea{
+    border-radius: 5px;
+    background-color: #b1e6dd;
+  }
+  img{
+    border-radius: 5px;
+  }
+  .type{
+    background-color: #b1e6dd;
+  }
+  </style>
+
+</head>
+<body>
+
+  <!--Nav-->
+  <div class="topnav">
+    <a href="Home.html">Home</a>
+    <a href="SignIn.html">Sign In</a>
+    <a href="LanguageResources.html">Language Resources</a>
+    <a href="CareerResources.html">Career Resources</a>
+    <a href="CustomerService.html">Customer Service</a>
+  </div>
+  <!--Nav-->
+
+  <!--Header content-->
+  <div class="wholepage">
+
+  <h1 align="right">About Us</h1>
+
+<table align="center">
+  <th><h1>Customer Service</h1></th>
+  <tr>
+    <td><img src="customersupport.jpg" alt="customer support" height="300px" width="500px"></td>
+  </tr>
+  <tr align= "center"><td>
+    <form class="" action="http://www.websitedevelopmentbook.com/FormEcho.php"
+     method="post">
+      Name: <input type="input" name="Name"><br>
+      E-mail: <input type="input" name="Name"><br>
+      Account Status:<br>
+      Business/Job<input type="radio" name="status" value="Business">
+      Existing Account<input type="radio" name="status" value="Exsisting">
+      New Account<input type="radio" name="status" value="New" checked><br>
+
+      Contact Us:<br>
+      CallBack <input type="checkbox" name="Contact" value="CallBack">
+      Email <input type="checkbox" name="Contact" value="Email">
+      On Site Location <input type="checkbox" name="Contact" value="On Site">
+      Service Rep. <input type="checkbox" name="Contact" value="Service Rep"><br>
+
+      Issue:<select class="" name="Issue:">
+        <option>Login</option>
+        <option>Profile</option>
+        <option>Troubleshoot</option>
+      </select><br>
+      Comments:<textarea name="Comment" rows="8" cols="50"></textarea><br>
+      <input type="submit" value="Submit Review">
+      <input type="reset" name="" value="reset">
+    </form><br>
+  </td></tr>
+  <tr>
+    <th>Our Info:</th>
+  </tr>
+  <tr>
+    <td>
+      <address>
+        Email us at <a href="mailto:webmaster@example.com">Our Email(Click Here)</a>.<br>
+        Visit us at:<br>
+        Website.com<br>
+        Box 564, Disneyland<br>
+        USA
+      </address></td>
+  </tr>
+  </table>
+
+  <!--bottomdiv logo-->
+  <div id="bottomdiv">
+        <img src="logo.png" alt="Logo" height="43" width= "43">
+      </div>
+</div>
+</body>
+</html>
